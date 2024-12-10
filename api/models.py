@@ -13,3 +13,9 @@ class programmer(models.Model):
 class student(models.Model):
     name = models.CharField(max_length=20)
     lastname = models.CharField(max_length=20)
+    Sexo = models.CharField(max_length=1)
+    Num_Fich = models.IntegerField(max_length=7)
+    Formacion = models.BooleanField(default=True)
+    Fecha_ingreso = models.DateField(default=None)
+    is_active = models.BooleanField(default=True)
+    
